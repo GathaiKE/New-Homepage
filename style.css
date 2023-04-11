@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+}
+
+.container{
+    display:block;
+    padding: 70px;
+    width: 100vw;
+    margin-left: 100px;
+}
+/* Navigation bar */
+.navbar{
+    display: flex;
+}
+.navbar>img{
+    width: 70px;
+    height: 40px;
+}
+.sections{
+    margin-left: 45%;
+    color: rgba(0, 0, 0, 0.644);
+}
+.sections>span{
+    padding: 10px;
+}
+.sections>span:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+/* Grid section */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "o o t"
+        "n f t"
+        "v s e";
+    width: 80%;
+    margin-top: 70px;
+}
+
+.one{
+    grid-area: o;
+}
+.one>img{
+    /* height: 100%; */
+    width: 100%;
+}
+
+.two{
+    grid-area: t;
+    background: hsl(240, 100%, 5%);
+    color: white;
+    padding: 20px;
+}
+.two>h2{
+    padding: 10px;
+    color: hsl(35, 77%, 62%);
+    font-size: 39px;
+}
+.two>h3{
+    padding: 10px;
+    margin-top: 20px;
+}
+.two>p{
+    color: hsla(36, 100%, 99%, 0.377);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 107%;
+}
+.two>h3:hover{
+    cursor: pointer;
+}
+.two>h3:active{
+   color:hsl(35, 77%, 62%);
+}
+.three{
+    grid-area: n;
+    font-size: 25px;
+}
+
+.four{
+    grid-area: f;
+}
+.four>p{
+    color: h#e7dbdb00;
+    margin-top: 10px;
+    line-height: 30px;
+}
+button{
+    width: 140px;
+    margin-top: 50px;
+    padding:15px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    border-style: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    cursor: pointer;
+    background: hsl(240, 100%, 5%);
+}
+.five{
+    grid-area: v;
+}
+
+.six{
+    grid-area: s;
+}
+.seven{
+    grid-area: e;
+}
+
+.small{
+    width: 100%;
+}
+.five,.six,.seven{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.five>div>h3:hover,.six>div>h3:hover,.seven>div>h3:hover{
+    cursor: pointer;
+}
+.five:active,.six:active,.seven:active{
+   color:hsl(5, 85%, 63%);
+}
+.five>div,.six>div,.seven>div{
+    margin-left: 10px;
+    padding: 10px
+}
+
+.three,.four{
+    padding: 30px;
+}
+
+#fade{
+    color: rgba(138, 138, 138, 0.979);
+}
+p{
+    font-size: 15px;
+}
